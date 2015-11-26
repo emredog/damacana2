@@ -1,0 +1,19 @@
+﻿@model  WebApp.Models.Product
+
+<h2>New Product</h2>
+
+<form action="@Url.Action("SaveProduct")" method="POST">
+    <p>
+        Name:
+       
+        @Html.TextBoxFor(x=>x.Name)
+    </p>
+
+    <p>
+        Price:
+      @Html.TextBoxFor(x => x.Price)
+    </p>
+    <p>
+        <button type="submit" value="Save">Save</button>
+    </p>
+</form>
